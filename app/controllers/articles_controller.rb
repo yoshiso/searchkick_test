@@ -62,7 +62,7 @@ class ArticlesController < ApplicationController
   end
 
   def search
-    @articles = Article.search params[:q]
+    @articles = Article.search params[:q],include:[:comments]
     return render json:@articles
   end
 
