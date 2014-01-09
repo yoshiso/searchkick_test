@@ -1,12 +1,8 @@
-defaults: &defaults
-  elasticsearch_url:http://192.168.33.10:9200
-
 development:
-  <<: *defaults
-  elasticsearch_url:http://192.168.33.10:9200
+  ELASTICSEARCH_URL: http://192.168.33.10:9200
 
 test:
-  <<: *defaults
+  ELASTICSEARCH_URL: http://192.168.33.10:9200
 
 production:
-  <<: *defaults
+  ELASTICSEARCH_URL:http://192.168.33.10:9200

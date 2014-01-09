@@ -1,5 +1,13 @@
 <h1>Listing articles</h1>
 
+
+<div>
+  <%= form_tag('/search',method: :get) do %>
+    <input type="text" name="q">
+    <button tye="submit">Search</button>
+  <% end %>
+</div>
+
 <table>
   <thead>
     <tr>
