@@ -1,6 +1,6 @@
 class Article < ActiveRecord::Base
   has_many :comments
-  searchkick
+  searchkick autocomplete:["title"]
 
   def search_data
     {
